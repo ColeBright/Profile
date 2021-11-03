@@ -1,0 +1,29 @@
+
+<mat-sidenav-container class="app-sidenav-container">
+    <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10"
+                    [opened]="!isScreenSmall"
+                    [mode]="isScreenSmall ? 'over' : 'side'">
+      <h2>Profile Summary</h2>
+      <ul>
+        <li>Experienced with Java and Angular using <br>
+            <ul><li>Spring</li><li>Spring Cloud</li><li>MySql</li></ul><br>
+        </li>
+        <li>Experienced with C# using  <br>
+            <ul><li>.NET Core</li><li>ASP.NET MVC</li><li>ASP.NET Web API</li><li>Blazor</li><li>Entity Framework</li>
+            <li>WinForms</li><li>Postgresql</li></ul>
+        </li>
+      </ul>
+      
+      
+    </mat-sidenav>
+  
+    <div class="app-sidenav-content">
+    <router-outlet></router-outlet>
+
+    </div>
+    <div class="sidenav-toggle app-sidenav-button">
+    <button type="button" mat-button (click)="sidenav.open()">
+        Press For Summary
+      </button>
+    </div>
+  </mat-sidenav-container>
