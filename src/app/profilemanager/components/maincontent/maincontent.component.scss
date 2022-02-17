@@ -5,11 +5,34 @@ img {
 .displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
-.centered {
-    text-align: center;
+    margin-right: auto; 
+}
+.left {
+    text-align: left;
     min-height: auto;
 }
+// .navbar {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     // float: right;
+//     // min-height: auto;
+//     // display: inline;
+//     // top: 0;
+// }
+.navbar {
+    justify-content: space-between;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
+span {
+    padding-right: 1rem;
+}
+li {
+    display: inline;
+  }
 ul {
     list-style-position: inside;
 }
