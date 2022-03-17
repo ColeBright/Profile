@@ -30,9 +30,14 @@ img {
 span {
     padding-right: 1rem;
 }
-li {
-    display: inline;
+
+.center {
+    align-self: center;
+    display: block;
+    margin-left: 33vw;
+    margin-right: 33vw; 
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
-ul {
-    list-style-position: inside;
-}
+
